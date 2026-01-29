@@ -1,0 +1,105 @@
+# ==========================================
+# iOS/Xcode 项目 .gitignore
+# ==========================================
+
+# Xcode 用户数据
+xcuserdata/
+*.xcuserstate
+
+# Xcode 构建产物
+build/
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+
+# Xcode 编译索引
+Index/
+
+# Xcode 断点和调试信息
+*.xcbkptlist
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+/*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# CocoaPods
+#
+# 通常建议将 Pods/ 目录忽略，因为可以通过 Podfile.lock 重新安装
+# 如果团队决定提交 Pods/，请注释下面两行
+Pods/
+!Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Code Injection
+iOSInjectionProject/
+
+# 签名相关（敏感文件）
+*.mobileprovision
+*.p12
+*.cer
+*.certSigningRequest
+
+# 应用包（构建产物）
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Archives
+*.xcarchive
+
+# 日志文件
+*.log
+
+# OS 生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# 环境配置（如果有）
+.env
+.env.local
+.env.*.local
+
+# 测试输出
+test_output/
+coverage/
+*.gcda
+*.gcno
+
+# 临时文件
+*.tmp
+*.temp
+
+# 文档文件
+*.md

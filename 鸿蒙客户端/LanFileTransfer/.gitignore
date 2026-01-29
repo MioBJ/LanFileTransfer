@@ -1,0 +1,68 @@
+# ==========================================
+# HarmonyOS 项目 .gitignore
+# ==========================================
+
+# DevEco Studio
+.idea/
+*.iml
+.hvigor/
+
+# 构建输出
+build/
+**/build/
+
+# 依赖目录
+node_modules/
+oh_modules/
+
+# 构建产物
+*.hap
+*.app
+*.har
+*.hsp
+
+# 签名文件（敏感文件）
+*.p12
+*.cer
+*.mobileprovision
+*.certSigningRequest
+
+# 本地配置
+local.properties
+.local.properties
+
+# 日志文件
+*.log
+logs/
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# 编辑器备份文件
+*~
+*.swp
+*.swo
+
+# 环境配置
+.env
+.env.local
+.env.*.local
+
+# 缓存
+.cache/
+.temp/
+
+# 测试输出
+coverage/
+test-results/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 文档文件
+*.md

@@ -1,0 +1,213 @@
+/* =============================================
+   暖阳传递 - 样式入口文件
+   ============================================= */
+
+/* 引入CSS变量 */
+@import './variables.css';
+
+/* 引入基础样式 */
+@import './base.css';
+
+/* 引入动画效果 */
+@import './animations.css';
+
+/* ===== 覆盖Vant默认主题 ===== */
+:root {
+  /* 主题色 */
+  --van-primary-color: var(--color-primary);
+  --van-success-color: var(--color-success);
+  --van-warning-color: var(--color-warning);
+  --van-danger-color: var(--color-danger);
+  
+  /* 文字颜色 */
+  --van-text-color: var(--color-text-primary);
+  --van-text-color-2: var(--color-text-secondary);
+  --van-text-color-3: var(--color-text-tertiary);
+  
+  /* 背景色 */
+  --van-background: transparent;
+  --van-background-2: rgba(255, 255, 255, 0.6);
+  
+  /* 圆角 */
+  --van-radius-sm: var(--radius-sm);
+  --van-radius-md: var(--radius-md);
+  --van-radius-lg: var(--radius-lg);
+  
+  /* 按钮 */
+  --van-button-primary-background: var(--gradient-button);
+  --van-button-primary-border-color: transparent;
+  --van-button-default-background: var(--glass-bg);
+  --van-button-round-border-radius: var(--radius-lg);
+  
+  /* 导航栏 */
+  --van-nav-bar-background: var(--glass-bg-light);
+  --van-nav-bar-title-text-color: var(--color-text-primary);
+  --van-nav-bar-icon-color: var(--color-primary);
+  
+  /* TabBar */
+  --van-tabbar-background: var(--glass-bg-heavy);
+  --van-tabbar-item-active-color: var(--color-primary);
+  
+  /* Cell */
+  --van-cell-background: var(--glass-bg);
+  --van-cell-border-color: var(--glass-border-light);
+  
+  /* Progress */
+  --van-progress-color: var(--gradient-progress);
+  --van-progress-background: rgba(0, 0, 0, 0.08);
+  
+  /* Empty */
+  --van-empty-description-color: var(--color-text-tertiary);
+  
+  /* Dialog */
+  --van-dialog-background: var(--glass-bg-heavy);
+  --van-dialog-border-radius: var(--radius-2xl);
+  
+  /* Toast */
+  --van-toast-background: rgba(45, 45, 45, 0.9);
+  --van-toast-border-radius: var(--radius-md);
+}
+
+/* ===== Vant组件样式覆盖 ===== */
+
+/* 导航栏毛玻璃效果 */
+.van-nav-bar {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.van-nav-bar__title {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* TabBar毛玻璃效果 */
+.van-tabbar {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.van-tabbar-item--active {
+  font-weight: var(--font-weight-medium);
+}
+
+.van-tabbar-item--active .van-tabbar-item__icon {
+  transform: scale(1.1);
+  transition: transform var(--duration-normal) var(--ease-bounce);
+}
+
+/* 按钮样式增强 */
+.van-button--primary {
+  background: var(--gradient-button);
+  border: none;
+  box-shadow: var(--shadow-button);
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.van-button--primary:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.25);
+}
+
+.van-button--large {
+  border-radius: var(--radius-lg);
+  height: 50px;
+  font-size: var(--font-size-md);
+}
+
+/* Cell样式增强 */
+.van-cell-group {
+  background: transparent;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.van-cell {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.van-cell::after {
+  border-color: var(--glass-border-light);
+}
+
+/* Progress样式增强 */
+.van-progress__portion {
+  background: var(--gradient-progress) !important;
+  background-size: 200% 100%;
+  animation: progressShimmer 2s ease-in-out infinite;
+}
+
+/* Empty样式 */
+.van-empty__description {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-base);
+}
+
+/* Dialog样式增强 */
+.van-dialog {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  overflow: hidden;
+}
+
+.van-dialog__header {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-semibold);
+  padding-top: var(--spacing-xl);
+}
+
+.van-dialog__message {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+.van-dialog__footer {
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+
+.van-dialog__footer .van-button {
+  flex: 1;
+  height: 44px;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+}
+
+.van-dialog__cancel,
+.van-dialog__confirm {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: none !important;
+}
+
+.van-dialog__cancel {
+  color: var(--color-text-secondary) !important;
+}
+
+.van-dialog__confirm {
+  color: var(--color-primary) !important;
+}
+
+/* 危险确认弹窗的确认按钮 - 红色文字 */
+.van-dialog__confirm[style*="color"] {
+  color: var(--color-danger) !important;
+}
+
+/* Toast毛玻璃效果 */
+.van-toast {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Field输入框增强 */
+.van-field__control {
+  color: var(--color-text-primary);
+}
+
+.van-field__control::placeholder {
+  color: var(--color-text-tertiary);
+}

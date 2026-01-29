@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">开心快传</string>
+    
+    <!-- 通知 -->
+    <string name="notification_upload_title">正在上传文件</string>
+    <string name="notification_upload_content">%1$s - %2$d%%</string>
+    <string name="notification_upload_complete">上传完成</string>
+    <string name="notification_upload_failed">上传失败</string>
+    
+    <!-- 权限提示 -->
+    <string name="permission_storage_title">存储权限</string>
+    <string name="permission_storage_message">需要访问存储权限以选择要上传的照片和视频</string>
+    <string name="permission_location_title">位置权限</string>
+    <string name="permission_location_message">需要位置权限以获取WiFi名称</string>
+    
+    <!-- 通用 -->
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_settings">去设置</string>
+</resources>

@@ -1,0 +1,24 @@
+# Web框架
+fastapi==0.104.1              # FastAPI核心框架
+uvicorn[standard]==0.24.0     # ASGI服务器
+python-multipart==0.0.6       # 支持文件上传
+
+# 异步IO
+aiofiles==23.2.1              # 异步文件操作
+
+# 配置管理
+pydantic==2.5.0               # 数据验证和设置管理
+pydantic-settings==2.1.0      # Pydantic设置管理
+python-dotenv==1.0.0          # 环境变量加载
+
+# 日志
+loguru==0.7.2                 # 强大的日志库
+
+# 工具
+psutil==5.9.6                 # 系统和进程工具（获取磁盘空间等）
+
+# 开发工具（可选）
+# pytest==7.4.3               # 测试框架
+# pytest-asyncio==0.21.1      # 异步测试支持
+# httpx==0.25.1               # HTTP客户端（用于测试）
+

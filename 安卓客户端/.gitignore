@@ -1,0 +1,100 @@
+# ==========================================
+# Android 项目 .gitignore
+# ==========================================
+
+# Gradle 构建相关
+.gradle/
+build/
+**/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio 相关
+.idea/
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches/
+.idea/navEditor.xml
+.idea/studiobot.xml
+
+# Keystore files
+# 注意：签名文件不应提交到公开仓库
+*.jks
+*.keystore
+
+# Google Services (可能包含敏感信息)
+# google-services.json
+
+# 日志文件
+*.log
+
+# OS 生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 测试输出
+/captures
+
+# IntelliJ
+out/
+*.ipr
+*.iws
+
+# Native 相关
+*.so
+*.o
+
+# Proguard 输出
+/proguard/
+
+# 缓存
+.cache/
+
+# Kotlin
+.kotlin/
+
+# 本地 NDK 构建输出
+obj/
+
+# APK 文件（构建产物）
+*.apk
+*.ap_
+*.aab
+
+# 测试覆盖率
+jacoco.exec
+coverage/
+
+# 崩溃日志
+crash/
+
+# Freeline
+freeline/
+freeline_project_description.json
+
+# 环境配置文件
+.env
+.env.local
+.env.*.local
+
+# 编辑器备份文件
+*~
+*.swp
+*.swo
+
+# 忽略 H5 资源中的 map 文件（如果有）
+*.map
+
+# 文档文件
+*.md

@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "局域网文件传输应用主模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "应用入口Ability"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "开心快传"
+    },
+    {
+      "name": "permission_internet_reason",
+      "value": "用于连接局域网内的文件传输服务器"
+    },
+    {
+      "name": "permission_wifi_reason",
+      "value": "用于获取WiFi连接状态，确保在同一局域网内"
+    },
+    {
+      "name": "permission_network_reason",
+      "value": "用于监测网络状态变化"
+    },
+    {
+      "name": "permission_media_reason",
+      "value": "用于选择要上传的照片和视频文件"
+    },
+    {
+      "name": "permission_media_write_reason",
+      "value": "用于保存下载的文件到本地"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "开心快传"
+    },
+    {
+      "name": "app_description",
+      "value": "局域网文件传输工具，快速安全地在设备间传输文件"
+    }
+  ]
+}

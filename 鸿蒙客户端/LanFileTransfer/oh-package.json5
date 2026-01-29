@@ -1,0 +1,17 @@
+{
+  "modelVersion": "6.0.2",
+  /**
+   * 局域网文件传输 - 鸿蒙客户端
+   * 包管理配置文件
+   */
+  "name": "lanfiletransfer",
+  "version": "1.0.0",
+  "description": "局域网文件传输系统 - 鸿蒙客户端",
+  "main": "",
+  "author": "董思远",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.21"
+  }
+}
